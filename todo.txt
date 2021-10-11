@@ -4,6 +4,14 @@ Decide on libraries
 Code the image recognition
     Isolate the letters
     Mark important points
+        stem height con
+        stem dip con
+        on line con
+        cons on arch and trough
+        size cons
+        letter disparity
+        position of tittle
+        kerning
     Create AI to give rating on handwriting
 Design quiz 
 Take in information
