@@ -1,0 +1,10 @@
+Create files
+Decide what to judge on handwriting
+Decide on libraries
+Code the image recognition
+    Isolate the letters
+    Mark important points
+    Create AI to give rating on handwriting
+Design quiz 
+Take in information
+Write paper with data 
