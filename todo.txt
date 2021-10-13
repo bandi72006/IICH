@@ -4,6 +4,7 @@ Decide on libraries
 Code the image recognition
     Isolate the letters
     Mark important points
+        x-height con
         stem height con
         stem dip con
         on line con
