@@ -17,3 +17,5 @@ Code the image recognition
 Design quiz 
 Take in information
 Write paper with data 
+
+```img = cv.imread(cv.samples.findFile("Images\\testText.png"), 0)```
