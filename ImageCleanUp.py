@@ -13,18 +13,22 @@ def cropY(imgToCropY):
     
     return imgToCropY[np.min(cropy):np.max(cropy)+1]
 
-def cropX(imgToCropX):
+def cropX(imgTocropY):
+    a = 0
+    b = np.all(img == 255, 0)
+    c = np.array([]).astype(int)  
+    for obj in b:
+        if not obj:
+            c = np.append(c, a)
+        a += 1
+    
+    print(a,b,c)
+    return imgTocropY[np.min(c):np.max(c)+1]
 
-    cropx=np.array([])
-    print(len(imgToCropX[0]))
-    for xdim1 in range(len(imgToCropX[0])):
-        if (np.all(imgToCropX == imgToCropX[xdim1][0], 0)):
-            cropx = np.append(cropx, xdim1).astype(int)
 
-    return imgToCropX[np.min(cropx):np.max(cropx)+1]
 
 
 cv.imshow("og", img)
 cv.imshow("cropy", cropY(img))
-cv.imshow("cropy", cropX(img))
+cv.imshow("cropx", cropX(img))
 cv.waitKey(0)
