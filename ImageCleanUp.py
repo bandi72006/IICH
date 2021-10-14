@@ -1,5 +1,7 @@
 import cv2 as cv
 import numpy as np
+from writingRater import *
+
 
 img = cv.imread(cv.samples.findFile("Images\\testText.png"), 0)
 
@@ -47,6 +49,8 @@ def cropXY(XY):
     
     return cropX(cropY(XY))
 
+xHeight = getXHeight(img)
+print(xHeight)
 
 cv.imshow("og", img)
 cv.imshow("cropped", cropXY(img))
