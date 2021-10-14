@@ -15,6 +15,6 @@ for obj in ydim:
     n +=1
 print(ydim2)
 
-img = np.delete(img, not ydim2, 1)
+img = np.delete(img, ydim2, 1)
 cv.imshow("test", img)
 cv.waitKey(0)
