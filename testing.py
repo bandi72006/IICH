@@ -8,11 +8,12 @@ ydim = np.all(img == 255, 0)
 n = 0
 for obj in ydim:
     
-    if obj:
+    if not obj:
         ydim2 = np.append(ydim2, n)
 
 
     n +=1
+img = img[:, np.min(c):np.max(c)+1]
 print(ydim2)
 
 img = np.delete(img, ydim2, 1)

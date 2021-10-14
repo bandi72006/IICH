@@ -23,7 +23,7 @@ def cropX(imgTocropY):
         a += 1
     
     print(a,b,c)
-    return imgTocropY[np.min(c):np.max(c)+1]
+    return imgTocropY[:, np.min(c):np.max(c)+1]
 
 
 
