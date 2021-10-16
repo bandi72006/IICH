@@ -49,7 +49,9 @@ def cropXY(XY):
     
     return cropX(cropY(XY))
 
-xHeight = getXHeight(img)
+croppedImage = cropX(cropY(img))
+
+xHeight = getXHeight(croppedImage)
 print(xHeight)
 
 cv.imshow("og", img)
